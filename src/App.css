@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+
+.text {
+  font-family: "Handlee", cursive;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+.preserve {
+  transform-style: preserve-3d;
+}
+
+
+.mask-fade {
+  --mask-angle: 90deg; 
+  -webkit-mask-image: linear-gradient(
+    var(--mask-angle),
+    transparent 0%,
+    #ffffff 300px,
+    #ffffff calc(100vw - 300px),
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    var(--mask-angle),
+    transparent 0%,
+    #ffffff 300px,
+    #ffffff calc(100vw - 300px),
+    transparent 100%
+  );
+}
+
+@media (max-width: 767px) {
+  .mask-fade {
+    --mask-angle: 45deg;
+  }
+}
+
+
