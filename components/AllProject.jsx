@@ -41,7 +41,7 @@ const AllProject = ({
 }) => {
   return (
     <>
-        <div className="max-[1020px]:hidden"> 
+        <div className="max-[600px]:hidden font-bold"> 
           <div className="overflow-hidden">
             <motion.div
               initial={{ y: "100%" }}
@@ -111,11 +111,10 @@ const AllProject = ({
             translateY={combinedY3}
           />
         </div>
-      <div className="min-[1020px]:hidden">
         <div>
-          <h1 className="text-5xl font-bold">Some Of My Projects</h1>
+          <h1 className="min-[600px]:hidden text-5xl font-bold uppercase text-center">Some Of My Projects</h1>
         </div>
-        <div className="mt-10 flex flex-col items-center">
+        <div className="min-[1020px]:hidden mt-10 flex flex-col items-center">
           <MobileCard
             heading="Netflix Clone"
             description="Netflix-Style Web App with <br /> Real-Time Content
@@ -143,7 +142,6 @@ const AllProject = ({
             overlay="true"
           />
         </div>
-      </div>
     </>
   );
 };
